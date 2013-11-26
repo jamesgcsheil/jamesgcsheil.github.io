@@ -400,3 +400,7 @@ ul#issues li img {
   font-family: Montserrat,Impact,sans-serif;
   font-size: 1.0em;
 }
+
+div.container {
+  margin-right: 30px;
+}
