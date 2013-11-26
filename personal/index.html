@@ -47,7 +47,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#" onmouseover="document.getElementById('hint').style.display='block';" onmouseout="document.getElementById('hint').style.display='none';" style="float:right;padding-right:20px;"><i class="tc-font-icon-help-circled"></i>Help</a>
+          <a class="brand" href="#" id="nav-help" ><i class="tc-font-icon-help-circled"></i>Help</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
             <li class="active" id="nav-home">
@@ -63,456 +63,428 @@
               <a href="#/6"><i class="tc-font-icon-coffee"></i> Recent Work</a>
             </li>
             <li id="nav-design">
-              <a href="#/12"><i class="tc-font-icon-edit-alt"></i> Design</a>
+              <a href="#/14"><i class="tc-font-icon-edit-alt"></i> Design</a>
             </li>
             <li id="nav-customers">
-              <a href="#/14"><i class="tc-font-icon-users"></i> Customers</a>
+              <a href="#/16"><i class="tc-font-icon-users"></i> Customers</a>
             </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+
     <div class="reveal" style="">
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
-        <section>
+        <!-- Start -->
+        <section id="js-slide-start">
           <h1>James Sheil</h1>
           <h3>UI/UX Portfolio</h3>
         </section>
-
+        <!-- Overview -->
         <section id="js-slide-overview">
           <h2>Overview</h2>
           <p>
             This presentation is intended to highlight some of the UI/UX projects I have worked on and relevant experience...
           </p>
         </section>
-
-          <section  id="js-slide-workexperience" data-state="bg-coral">
-            <h3 style="text-shadow:-4px 4px 2px #000">Work Experience</h3>
-  <div id="timeline">
-    <ul id="dates">
-      <li><a href="#1999">1999</a></li>
-      <li><a href="#2004">2004</a></li>
-      <li><a href="#2006">2006</a></li>
-      <li><a href="#2011">2011</a></li>
-    </ul>
-    <ul id="issues">
-      <li id="1999">
-        <a href="http://www.adobe.com" target="_blank" itemprop="affiliation"><img src="img/adobe.png" width="256" height="256" /></a>
-        <h4 >August 1999 - July 2004</h4>
-        <h4 class="js-job-title">Technical Solutions Consultant</h4>
-        <h4 style=""><a href="#">Dublin</a></h4>
-      </li>
-      <li id="2004">
-        <a href="http://www.wbtsystems.com" target="_blank" itemprop="affiliation"><img src="img/wbt_systems.jpg" width="256" height="256" /></a>
-        <h4 style="font-size:smaller;">July 2004 - August 2006</h4>
-        <h4 class="js-job-title">Senior Technical Solutions Consultant</h4>
-        <h4 style=""><a href="#">Dublin</a></h4>
-      </li>
-      <li id="2006">
-        <a href="http://www.wbtsystems.com" target="_blank" itemprop="affiliation"><img src="img/wbt_systems.jpg" width="256" height="256" />
-        <h4 style="font-size:smaller;">September 2006 - October 2011</h4>
-        <h4 class="js-job-title">Lead Technical Solutions Consultant & Customer Services UX/UI Lead</h4>
-        <h4 style=""><a href="#">Dublin</a></h4>
-      </li>
-      <li id="2011">
-        <a href="http://www.wbtsystems.com" target="_blank" itemprop="affiliation"><img src="img/wbt_systems.jpg" width="256" height="256" /></a>
-        <h4 style="font-size:smaller;">November 2011 - present</h4>
-        <h4 class="js-job-title">R&D Product UX/UI Lead</h4>
-        <h4 style=""><a href="#">Dublin</a></h4>
-      </li>
-    </ul>
-  </div>
-    </section>
-
-<section id="js-slide-experience-wbt01">
-            <h3 style="text-shadow:-4px 4px 2px #000"><strong>R&D Product UX/UI Lead</strong></h3>
-            <a href="http://www.wbtsystems.com" target="_blank">WBT Systems, Dublin</a><br />
-            <em>From November 2011 to Present</em>
-            <p class="textblock" style="text-align:justify">
-            <ul class="js-list">
-              <li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i>Understanding customer and market business <span class="label label-info">requirements</span> and translating these into <span class="label label-warning">UX core product features</span>.</li>
-              <li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i><span class="label label-success">Leading</span> a team of 3 -5 UI/UX developers to conceive, analyse, hand code and test our ideas.</li>
-              <li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i>Establish best practice guidelines in all aspects of <span class="label label-warning">product UI/UX development</span>, incl. Accessibility, Fluid/Responsive Layouts, Cross-Browser Compliance and multiple platform support.</li>
-<li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i>Focused on <span class="label label-info">user-centric designs</span> within an <span class="label label-important">agile</span>, collaborative environment.</li>
-<li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i>Champion <span class="label label-default">experimentation</span> and use of new <span class="label label-warning">innovative UI/UX technologies</span> and trends within the core product.</li>
-<li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i><span class="label label-info">Own</span> the user interface specifications documentation from the <span class="label label-success">design phase through to development</span>.</li>
+        <!-- Work Experience 1 -->
+        <section id="js-slide-workexperience_001" data-state="bg-coral">
+          <h3 style="text-shadow:-4px 4px 2px #000">Work Experience</h3>
+          <div id="timeline">
+            <ul id="dates">
+              <li><a href="#1999">1999</a></li>
+              <li><a href="#2004">2004</a></li>
+              <li><a href="#2006">2006</a></li>
+              <li><a href="#2011">2011</a></li>
             </ul>
-</p>          </section>
-<section id="js-slide-experience-wbt02">
-            <h3 style="text-shadow:-4px 4px 2px #000"><strong>Senior Technical Solutions Consultant & Customer Services UX/UI Lead</strong></h3>
-            <a href="http://www.wbtsystems.com" target="_blank">WBT Systems, Dublin</a><br />
-            <em>From September 2006 to November 2012</em>
-            <p class="textblock" style="text-align:justify">
+            <ul id="issues">
+              <li id="1999">
+                <a href="http://www.adobe.com" target="_blank" itemprop="affiliation"><img src="img/adobe.png" /></a>
+                <h4 style="font-size:smaller;">August 1999 - July 2004</h4>
+                <h4 class="js-job-title">Technical Solutions Consultant</h4>
+                <h4 style=""><a href="#">Dublin</a></h4>
+              </li>
+              <li id="2004">
+                <a href="http://www.wbtsystems.com" target="_blank" itemprop="affiliation"><img src="img/wbt_systems.jpg" /></a>
+                <h4 style="font-size:smaller;">July 2004 - August 2006</h4>
+                <h4 class="js-job-title">Senior Technical Solutions Consultant</h4>
+                <h4 style=""><a href="#">Dublin</a></h4>
+              </li>
+              <li id="2006">
+                <a href="http://www.wbtsystems.com" target="_blank" itemprop="affiliation"><img src="img/wbt_systems.jpg" />
+                <h4 style="font-size:smaller;">September 2006 - October 2011</h4>
+                <h4 class="js-job-title">Lead Technical Solutions Consultant & Customer Services UX/UI Lead</h4>
+                <h4 style=""><a href="#">Dublin</a></h4>
+              </li>
+              <li id="2011">
+                <a href="http://www.wbtsystems.com" target="_blank" itemprop="affiliation"><img src="img/wbt_systems.jpg" /></a>
+                <h4 style="font-size:smaller;">November 2011 - present</h4>
+                <h4 class="js-job-title">R&amp;D Product UX/UI Lead</h4>
+                <h4 style=""><a href="#">Dublin</a></h4>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="js-slide-experience_002">
+          <h3 style="text-shadow:-4px 4px 2px #000"><strong>R&amp;D Product UX/UI Lead</strong></h3>
+          <a href="http://www.wbtsystems.com" target="_blank">WBT Systems, Dublin</a><br />
+          <em>From November 2011 to Present</em>
+          <p class="textblock" style="text-align:justify">
             <ul class="js-list">
-              <li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i><span class="label label-warning">Present product features</span> and benefits to management, staff, customers and partners while setting up and <span class="label label-info">running product demonstrations</info>.</li>
-              <li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i><span class="label label-success">Collaborate</span> with Product Team, Executive Team, Creative & Technology Leads to help <span class="label label-important">define and roadmap</span> deliverables for experience projects.</li>
-              <li class="fragment"><i class="tc-font-icon-check" style="display:inline-block;position:absolute;left:-20px;"></i>Act as <span class="label label-warning">Lead UI/UX designer</span> and contact point for all services-based projects and customisations. This includes communicating the product <span class="label label-info">UI/UX vision</span> and technical implementation to customers and customer outsourced vendors and design agencies.</li>
-  </ul>
-
-</p>          </section>
-
-          <section id="js-slide-experience-skills" data-state="bg-brown">
-  <h2>Relevant Skills</h2>
-  <img src="img/relevantskills.png"></img>
-
-</section>
-
-
-        <section data-state="bg-coral" id="js-slide-recent-001">
-            <h3 style="text-shadow:-4px 4px 2px #000">Recent UX & UI Work</h3>
-              <h4>R&D Product UX/UI Lead for LMS Server Product Overhaul</h4>
-        <p class="fragment">A core strength of the WBT Systems principle product - the <a href="http://www.wbtsystems.com/product/" target="_blank">TopClass LMS</a> - is its capacity to be radically modified and moulded to fit a customer's vision, both functionally and aesthetically via customisation by Services.<br/>This flexibility led to a focus in R&D on new functionality to the detriment of the <em>overall User Experience</em>.</p><p class="fragment">Having championed the call to <em>redesign the LMS UX and UI</em> for a number of years ... I was chomping at the bit to get my hands on the product and help provide some TLC to the UI & particularly the UX, moving to a more <strong>user-centric design</strong>.<br/>My many years on the coal face, helping customers with their own UI/UX project overhauls of the LMS, help to ensure that my concepts are <em>data-driven and based on real user feedback and concerns</em>.</p>
-<div  class="fragment"><p>This project is up-and-running for a number of months now ... and is keeping myself and my UI/UX team on our toes.</p>
-        </div>
-  </section>
-
-<section id="js-slide-recent-002">
+              <li class="fragment"><i class="tc-font-icon-check" ></i>Understanding customer and market business <span class="label label-info">requirements</span> and translating these into <span class="label label-warning">UX core product features</span>.</li>
+              <li class="fragment"><i class="tc-font-icon-check" ></i><span class="label label-success">Leading</span> a team of 3 -5 UI/UX developers to conceive, analyse, hand code and test our ideas.</li>
+              <li class="fragment"><i class="tc-font-icon-check" ></i>Establish best practice guidelines in all aspects of <span class="label label-warning">product UI/UX development</span>, incl. Accessibility, Fluid/Responsive Layouts, Cross-Browser Compliance and multiple platform support.</li>
+              <li class="fragment"><i class="tc-font-icon-check" ></i>Focused on <span class="label label-info">user-centric designs</span> within an <span class="label label-important">agile</span>, collaborative environment.</li>
+              <li class="fragment"><i class="tc-font-icon-check" ></i>Champion <span class="label label-default">experimentation</span> and use of new <span class="label label-warning">innovative UI/UX technologies</span> and trends within the core product.</li>
+              <li class="fragment"><i class="tc-font-icon-check" ></i><span class="label label-info">Own</span> the user interface specifications documentation from the <span class="label label-success">design phase through to development</span>.</li>
+            </ul>
+          </p>          
+        </section>
+        <section id="js-slide-experience_003">
+          <h3 style="text-shadow:-4px 4px 2px #000"><strong>Senior Technical Solutions Consultant &amp; Customer Services UX/UI Lead</strong></h3>
+          <a href="http://www.wbtsystems.com" target="_blank">WBT Systems, Dublin</a><br />
+          <em>From September 2006 to November 2012</em>
+          <p class="textblock" style="text-align:justify">
+            <ul class="js-list">
+              <li class="fragment"><i class="tc-font-icon-check" ></i><span class="label label-warning">Present product features</span> and benefits to management, staff, customers and partners while setting up and <span class="label label-info">running product demonstrations</info>.</li>
+              <li class="fragment"><i class="tc-font-icon-check" ></i><span class="label label-success">Collaborate</span> with Product Team, Executive Team, Creative & Technology Leads to help <span class="label label-important">define and roadmap</span> deliverables for experience projects.</li>
+              <li class="fragment"><i class="tc-font-icon-check" ></i>Act as <span class="label label-warning">Lead UI/UX designer</span> and contact point for all services-based projects and customisations. This includes communicating the product <span class="label label-info">UI/UX vision</span> and technical implementation to customers and customer outsourced vendors and design agencies.</li>
+            </ul>
+          </p>
+        </section>
+        <section id="js-slide-skills" data-state="bg-brown">
+          <h2>Relevant Skills</h2>
+          <img src="img/relevantskills.png" alt="skills word map" title="skills word map"></img>
+        </section>
+        <section data-state="bg-coral" id="js-slide-recent_001">
+          <h3 style="text-shadow:-4px 4px 2px #000">Recent UX & UI Work</h3>
+          <h4>R&amp;D Product UX/UI Lead for LMS Server Product Overhaul</h4>
+          <p class="fragment">A core strength of the WBT Systems principle product - the <a href="http://www.wbtsystems.com/product/" target="_blank">TopClass LMS</a> - is its capacity to be radically modified and moulded to fit a customer's vision, both functionally and aesthetically via customisation by Services.<br/>This flexibility led to a focus in R&amp;D on new functionality to the detriment of the <em>overall User Experience</em>.</p>
+          <p class="fragment">Having championed the call to <em>redesign the LMS UX and UI</em> for a number of years ... I was chomping at the bit to get my hands on the product and help provide some TLC to the UI &amp; particularly the UX, moving to a more <strong>user-centric design</strong>.<br/>My many years on the coal face, helping customers with their own UI/UX project overhauls of the LMS, help to ensure that my concepts are <em>data-driven and based on real user feedback and concerns</em>.</p>
+          <div  class="fragment">
+            <p>This project is up-and-running for a number of months now ... and is keeping myself and my UI/UX team on our toes.</p>
+          </div>
+        </section>
+        <section id="js-slide-recent_002">
           <h2>Some of the UX Features Added</h2>
-<ul class="js-list">
-<li class="fragment"><pre><code>Emphasis on user interaction and presentation via data-driven streams as 'snippets/feeds'</code></pre></li>
-<li class="fragment"><pre><code>Simplified, concise adminstration and learner workflow</code></pre></li>
-<li class="fragment"><pre><code>Single Sign On via Facebook, LinkedIn etc.</code></pre></li>
-<li class="fragment"><pre><code>Consistent, intelligent use of user context and options via integrated menus.</code></pre></li>
-<li class="fragment"><pre><code>Feature rich HTML5 and CSS3</code></pre></li>
-<li class="fragment"><pre><code>Responsive, fluid layout based on Bootstrap Framework</code></pre></li>
-<li class="fragment"><pre><code>Full cross browser ... well IE8 and above anyways ...</code></pre></li>
-<li class="fragment"><pre><code>LESS based CSS</code></pre></li>
-</ul>
+            <ul class="js-list">
+              <li class="fragment"><pre><code>Emphasis on user interaction and presentation via data-driven streams as 'snippets/feeds'</code></pre></li>
+              <li class="fragment"><pre><code>Simplified, concise adminstration and learner workflow</code></pre></li>
+              <li class="fragment"><pre><code>Single Sign On via Facebook, LinkedIn etc.</code></pre></li>
+              <li class="fragment"><pre><code>Consistent, intelligent use of user context and options via integrated menus.</code></pre></li>
+              <li class="fragment"><pre><code>Feature rich HTML5 and CSS3</code></pre></li>
+              <li class="fragment"><pre><code>Responsive, fluid layout based on Bootstrap Framework</code></pre></li>
+              <li class="fragment"><pre><code>Full cross browser ... well IE8 and above anyways ...</code></pre></li>
+              <li class="fragment"><pre><code>LESS based CSS</code></pre></li>
+            </ul>
         </section>
-
-<section id="js-slide-recent-003a">
+        <section id="js-slide-recent_003">
           <h2>Some of the UX Features Added Contd.</h2>
-<ul class="js-list">
-<li class="fragment"><pre><code>jQuery based</code></pre></li>
-<li class="fragment"><pre><code>Web Font Icons</code></pre></li>
-<li class="fragment"><pre><code>Multi-lingual support</code></pre></li>
-<li class="fragment"><pre><code>All of this ... and Section 508 compliant for learner users</code></pre></li>
-</ul>
-
-</section>
-<section id="js-slide-recent-003b">
-<h4>Take a look at some of the features added below ...</h4>
-<div><iframe allowfullscreen="" src="https://player.vimeo.com/video/79964445" width="500" height="333" frameborder="0"></iframe></div><br/><p><a href="http://vimeo.com/79964445" target="_blank"><i class="tc-font-icon-video"></i> Product UI/UX Video<span style="font-size: 0.75em"> - click here if media does not display correctly</span></a>.</p>
-<!--
-<span class="more fragment" style="font-size:.9em"><p class="textblock" style="text-align:right"><a href="javascript:void(0)" onClick="Reveal.down();" rel="next"><em>for even more ... move <span style="text-decoration:underline;">down a notch</span></em></a></p></span> -->
-        </section>
-
-        <section id="js-slide-recent-003c">
-<h3>Product UX Overhaul</h3>
-
-
-
-<div id="links">
-    <a href="img/tc922_login.png" title="Pre Overhaul Log In">
-        <img src="img/tc922_login.png" alt="Pre Overhaul Log In" style="width:100px;height:50px;">
-    </a>
-    <a href="img/tc950_login.png" title="Post Overhaul Login">
-        <img src="img/tc950_login.png" alt="Post Overhaul Login" style="width:100px;height:50px;">
-    </a>
-    <a href="img/tc922_home.png" title="Pre Overhaul Home Screen">
-        <img src="img/tc922_home.png" alt="Pre Overhaul Home Screen" style="width:100px;height:50px;">
-    </a>
-    <a href="img/tc950_home.png" title="Post Overhaul Home Screen">
-        <img src="img/tc950_home.png" alt="Post Overhaul Home Screen" style="width:100px;height:50px;">
-    </a>
-    <a href="img/tc922_activitylist.png" title="Pre Overhaul Activity List Screen">
-        <img src="img/tc922_activitylist.png" alt="Pre Overhaul Activity List Screen" style="width:100px;height:50px;">
-    </a>
-    <a href="img/tc950_activitylist.png" title="Post Overhaul Activity List Screen">
-        <img src="img/tc950_activitylist.png" alt="Post Overhaul Activity List Screen" style="width:100px;height:50px;">
-    </a>
-    <a href="img/tc922_editactivityl.png" title="Pre Overhaul Activity Edit Screen">
-        <img src="img/tc922_editactivityl.png" alt="Pre Overhaul Activity Edit Screen" style="width:100px;height:50px;">
-    </a>
-    <a href="img/tc950_createnew.png" title="Post Overhaul Activity Create Screen">
-        <img src="img/tc950_createnew.png" alt="Post Overhaul Activity Create Screen" style="width:100px;height:50px;">
-    </a>
-    <a href="img/tc950_conference.png" title="Post Overhaul Conference Activity Edit Screen">
-        <img src="img/tc950_conference.png" alt="Post Overhaul Conference Activity Edit Screen" style="width:100px;height:50px;">
-    </a>
-</div>
-
-<!--
-<em>scroll through screenshots provided below</em>
-<div class="bs-docs-example" style="top:10px;">
-<div id="myCarousel" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="img/tc922_login.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>Pre UX Log In</h4>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/tc950_login.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>With UI/UX Login</h4>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/tc922_home.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>Pre UX Home Screen</h4>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/tc950_home.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>Post UX Home Screen</h4>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <img src="img/tc922_activitylist.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>Pre UX Activity List Screen</h4>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/tc950_activitylist.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>Post UX Activity List Screen</h4>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/tc922_editactivityl.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>Pre UX Activity Edit Screen</h4>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/tc950_createnew.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>Post UX Activity Create Screen</h4>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="img/tc950_conference.png" alt="">
-                    <div class="carousel-caption">
-                      <h4>Post UX Conference Activity Edit Screen</h4>
-                    </div>
-                  </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-              </div>
-</div>
--->
-</section>
-        <section data-state="bg-coral" id="js-slide-recent-004">
-            <h3 style="text-shadow:-4px 4px 2px #000"><span class="mocticons mo-group"></span>Recent UX & UI Work</h3>
-              <h4>Customer UX/UI Project</h4>
-        <p><strong>Project Background</strong></p>
-        <p>The customer <span class="label label-default" style="font-size:0.7em;font-weight:200;color:#666;">(large global brand)</span> wanted to build on the back of the success of a Capability Assessment Tool delivered by myself and my team previously for a number of Business Functions.</p><p>They first approached WBT in March 2012 with a view to convert a suite of excel-based business processes and tools to integrated online components hosted within the the TopClass LMS. These tools are all in the area of organisational and individual competency management and assessment.</p>
-</p>
-  </section>
-        <section data-state="bg-coral" id="js-slide-recent-005">
-    <section id="js-slide-recent-005a">
-              <h4>Customer UX/UI Project</h4>
-        <p><strong>Customer UX Case</strong></p>
-<ul>
-<li>An online user/administrative experience.</li>
-<li>Centralised location of data.</li>
-<li>Consistent UI/UX for all users.</li>
-<li>Ability to generate user, manager, country and market level reports of data.</li>
-<li>Allow for integration with the customer LMS, particularly in the area of creating individual learning plans for the assessment process.</li>
-<li>Allow for localisation into 10+ new languages (incl. Asian) of the administrative and end-user screens (incl. PDF report generation).</li>
-<li>Create custom End-user/Manager workflows for the assessment process.
-<span class="more fragment" style="font-size:.9em"><p class="textblock" style="text-align:right"><a href="javascript:void(0)" onClick="Reveal.down();" rel="next"><i class="tc-font-icon-down-3"></i><em>to take a look at what happened ... move <span style="text-decoration:underline;">down</span></em></a></p></span>
-</li>
-</ul>
-  </section>
-  <section id="js-slide-recent-005b">
-<span style="font-size:.9em"><p class="textblock" style="text-align:right"><a href="javascript:void(0)" onClick="Reveal.up();" rel="next"><i class="tc-font-icon-up-3"></i><em>back to <span style="text-decoration:underline;">customer UX case</span></em></a></p></span>
-  <h4>From the original MS Excel-based assessment process ... <i class=""></i></h4>
-  <br/>
-<iframe src="http://player.vimeo.com/video/79868321?byline=0&amp;portrait=0" width="500" height="257" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<br/><br/>
-<p><a href="http://vimeo.com/79868321" target="_blank"><i class="tc-font-icon-video"></i> excel based process<span style="font-size: 0.75em"> - click here if media does not display correctly</span></a>.</p>
-<span class="more fragment" style="font-size:.9em"><p class="textblock" style="text-align:right"><a href="javascript:void(0)" onClick="Reveal.down();" rel="next"><i class="tc-font-icon-down-3"></i><em>to take a look at the results <span style="text-decoration:underline;">move down</span></em></a></p></span>
-  </section>
-  <section id="js-slide-recent-005c">
-<span style="font-size:.9em"><p class="textblock" style="text-align:right"><a href="javascript:void(0)" onClick="Reveal.up();" rel="next"><i class="tc-font-icon-up-3"></i><em>back to <span style="text-decoration:underline;">excel based process</span></em></a></p></span>
-  <h4>... to the migrated assessment process UX</h4>
-  <br/>
-<iframe src="http://player.vimeo.com/video/79874838?byline=0&amp;portrait=0" width="500" height="257" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<br/><br/>
-<p><a href="http://vimeo.com/79874838" target="_blank"><i class="tc-font-icon-video"></i> excel based process<span style="font-size: 0.75em"> - click here if media does not display correctly</span></a>.</p>
-  </section>
-</section>
-        <section data-state="bg-coral" id="js-slide-recent-006">
-              <h4>Customer UX/UI Project</h4>
-        <p><strong>Customer Acknowledged Results & Benefits</strong></p>
-<p class="triangle-isosceles">This only needs one HTML element.</p>
-<blockquote class="oval-speech-border">
-<p>This is a blockquote that is styled to look like a speech bubble</p>
-</blockquote>
-<p class="triangle-right left"><i class="tc-font-icon-quote-left"></i>Creating custom role-based workflows to manage the various Assessment processes.<i class="tc-font-icon-quote-right"></i></p>
-<p class="triangle-right right gold"><i class="tc-font-icon-quote-left"></i>Improving on UI/UX for user processes, i.e. the assessment process for end-users and managers.<i class="tc-font-icon-quote-right"></i></p>
-
-<blockquote>"Creating custom role-based workflows to manage the various Assessment processes."</blockquote>
-<blockquote>"Improving on UI/UX for user processes, i.e. the assessment process for end-users and managers."</blockquote>
-<blockquote>"Providing a localised UI to handle all current and future languages identified."</blockquote>
-<blockquote>"Minimising changes required to core product functionality."</blockquote>
-<blockquote>"Utilising YUI JavaScript Library Charting functionality to dynamically generate relevant real-time charts for End-Users, Assessors and relevant Management."</blockquote>
-<blockquote>"Using jQuery JavaScript Plugins and libraries to re-engineer UI/UX screens for end-users, while ensuring that performance for remote/low bandwidth users remained acceptable."</blockquote>
-<blockquote>"Integrating with core TopClass product features, e.g. LMS Catalogue/Enrolments etc. particularly regarding the creation of Competency-based Development Plans."</blockquote>
-  </section>
-  <section id="js-slide-design">
-          <h4>Below are a couple of examples of UI/UX concepts from initial design to final output </h4>
-     <iframe src="http://www.slideshare.net/slideshow/embed_code/28459126?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe><br/><br/><div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/JamesSheil/my-uiux-design" title="My UI-UX Design" target="_blank"><i class="tc-font-icon-video"></i> UX design samples<span style="font-size: 0.75em"> - click here if media does not display correctly</span></a></strong> </div>
-        </section>
-        <section id="js-slide-instructdesign">
-          <h2>Instructional Design</h2>
-          <p style="text-align: left;">My work as an <em>Instructional Designer</em> also helped greatly to hone my UI/UX skills over the years.</p><br/>
-          <p style="text-align: left;background: rgba(255,255,255,.05);">I worked with customers to both advise on, and develop online learning materials. The <em>ADDIE</em> Instructional Design Process provided the framework for these projects.</p><br/>
-          <div style="text-align: left">Some of the skils required included:</div>
-          <ul>
-            <li>Performing needs analysis</li>
-            <li>Employing <strong>Data-Driven</strong> Designs</li>
-            <li>Collaborating with customer subject matter experts</li>
-            <li>Creating <strong><a href="#" id="id-popover" data-placement="top" onclick="return(false)">engaging</a></strong> content
-<div id="id-contents" class="popover fade top"><div class="arrow"></div><div class="popover-content" style="background:#1A1A1A;">For a sample course created in Articulate as HTML5 - click <a href="content/topclass_articulate/story_html5.html" target="_blank">here</a></div></div>
-            </li>
-            <li>Ensuring the content was relevant to the target customer base</li>
-            <li>HTML, HTML5 & SCORM content</li>
-            <li>Tools incl. <em>hand-coded HTML and javascript, Articulate Product Set and Adobe Captivate.</em></li>
+          <ul class="js-list">
+            <li class="fragment"><pre><code>jQuery based</code></pre></li>
+            <li class="fragment"><pre><code>Web Font Icons</code></pre></li>
+            <li class="fragment"><pre><code>Multi-lingual support</code></pre></li>
+            <li class="fragment"><pre><code>All of this ... and Section 508 compliance for learner users</code></pre></li>
           </ul>
         </section>
-
-        <section data-state="customers" id="js-slide-customers">
-            <section data-state="customers1" id="js-slide-customers-a">
-          <h2>Sample Customer UI/UX Work</h2>
-<ul class="media-list" style="padding-left:20px;width:100%">
-  <li class="media">
-    <a class="pull-left" href="http://www.diageo.com" target="_blank">
-      <img src="img/diageo1.jpg" alt="Diageo" />
-    </a>
-    <div class="media-body">
-      <br/>
-      <a class="media-heading" href="http://www.diageo.com" target="_blank">Diageo</a>
-      <br/>
-    </div>
-  </li>
-  <li class="media">
-    <a class="pull-left" href="http://www.worldbank.org" target="_blank">
-      <img src="img/worldbank.png" alt="The World Bank" />
-    </a>
-    <div class="media-body">
-      <br/>
-      <a class="media-heading" href="http://www.worldbank.org" target="_blank">The World Bank</a>
-      <br/>
-    </div>
-  </li>
-  <li class="media">
-    <a class="pull-left" href="http://www.valero.com" target="_blank">
-      <img src="img/valero.png" alt="Valero" />
-    </a>
-    <div class="media-body">
-      <br/>
-      <a class="media-heading" href="http://www.valero.com" target="_blank">Valero</a>
-      <br/>
-    </div>
-  </li>
-</ul>
-<br/><br/>
-<div style="font-size:.8em">
-  <p>
-  <a href="javascript:void(0)" onClick="Reveal.down();" rel="next">
-    <em><i class="tc-font-icon-down-3"></i><span>To view more</span> go <span style="text-decoration:underline;">down</span></em>
-  </a>
-  </p>
-</div>
-</section>
-<section data-state="customers2" id="js-slide-customers-b">
-        <h2>Sample Customer UI/UX Work</h2>
-<div>
-        <ul class="media-list" style="padding-left:20px;width:100%">
-  <li class="media">
-    <a class="pull-left" href="http://www.charteredaccountants.com.au/" target="_blank">
-      <img src="img/icaa.png" alt="Institute of Chartered Accountants of Australia" />
-    </a>
-    <div class="media-body">
-      <br/>
-      <a class="media-heading" href="http://www.charteredaccountants.com.au/" target="_blank">Institute of Chartered Accountants of Australia</a>
-      <br/>
-    </div>
-  </li>
-  <li class="media">
-    <a class="pull-left" href="http://www.miele.com" target="_blank">
-      <img src="img/miele.png" alt="Miele" />
-    </a>
-    <div class="media-body">
-      <br/>
-      <a class="media-heading" href="http://www.miele.com" target="_blank">Miele</a>
-      <br/>
-    </div>
-  </li>
-  <li class="media">
-    <a class="pull-left" href="http://www.betathetapi.org" target="_blank">
-      <img src="img/betathetapi_logo.png" alt="Beta Theta Pi" />
-    </a>
-    <div class="media-body">
-      <br/>
-      <a class="media-heading" href="http://www.betathetapi.org‎" target="_blank">Beta Theta Pi</a>
-      <br/>
-    </div>
-  </li>
-</ul>
-<br/><br/>
-<div style="font-size:.8em">
-  <p>
-  <a href="javascript:void(0)" onClick="Reveal.up();" rel="prev">
-    <em><i class="tc-font-icon-up-3"></i><span>Back </span><span style="text-decoration:underline;">up</span></em>
-  </a>
-  </p>
-</div>
-</div>
-      </section>
-  </section>
-        <section id="js-slide-end">
-          <h1>If you'd like to get in touch ...</h1>
-          <br/><br/>
-          <blockquote><i class="tc-font-icon-mail" style="margin-right: 20px;"></i><a href="mailto:jamesgcsheil@yahoo.co.uk">jamesgcsheil@yahoo.co.uk</a></blockquote>
-          <blockquote><i class="tc-font-icon-linkedin-squared" style="margin-right: 20px;"></i><a href="http://http://www.linkedin.com/profile/view?trk=tab_pro&id=84233139">LinkedIn profile</a></blockquote>
-
+        <section id="js-slide-recent_004">
+          <h4>Take a look at some of the features added below ...</h4>
+          <div>
+            <iframe allowfullscreen="" src="https://player.vimeo.com/video/79964445" width="500" height="333" frameborder="0"></iframe>
+          </div>
+          <br/>
+          <p>
+            <a href="http://vimeo.com/79964445" target="_blank">
+              <i class="tc-font-icon-video"></i> Product UI/UX Video<span style="font-size: 0.75em"> - click here if media does not display correctly</span>
+            </a>.
+          </p>
         </section>
-
-      </div>
-
-    </div>
-
-      <div id="hint" style="position:absolute;top:40px;z-index: 1010;background:#1A1A1A;opacity:0.85;display:none;color:#ffffff;font-family: Montserrat,Impact,sans-serif;font-size: 1.0em;">
-        <br />
-        <ul style="line-height:1.5em">
-          <li>
-            <strong>Keyboard shortcuts</strong> for navigation :
-      <ul><br />
-              <li><em>Keyboard arrows</em></li>
-              <li><kbd class="light">P</kbd> / <kbd class="light">PageUp</kbd> : Previous page</li>
-              <li><kbd class="light">N</kbd> / <kbd class="light">PageDown</kbd> / <kbd class="light">Space bar</kbd> : Next page</li>
-              <li><kbd class="light">Esc</kbd> / <kbd class="light">O</kbd> : Overview all the slides</li>
-              <li><kbd class="light">F</kbd> : Fullscreen</li>
+        <section id="js-slide-recent_005">
+          <h3>Product UX Overhaul</h3>
+          <p>click on any thumbnail below to view</p>
+          <div id="links">
+            <a href="img/tc922_login.png" title="Pre Overhaul Log In">
+                <img src="img/tc922_login.png" alt="Pre Overhaul Log In" class="links-thumbnail" />
+            </a>
+            <a href="img/tc950_login.png" title="Post Overhaul Login">
+                <img src="img/tc950_login.png" alt="Post Overhaul Login" class="links-thumbnail" />
+            </a>
+            <a href="img/tc922_home.png" title="Pre Overhaul Home Screen">
+                <img src="img/tc922_home.png" alt="Pre Overhaul Home Screen" class="links-thumbnail" />
+            </a>
+            <a href="img/tc950_home.png" title="Post Overhaul Home Screen">
+                <img src="img/tc950_home.png" alt="Post Overhaul Home Screen" class="links-thumbnail" />
+            </a>
+            <a href="img/tc922_activitylist.png" title="Pre Overhaul Activity List Screen">
+                <img src="img/tc922_activitylist.png" alt="Pre Overhaul Activity List Screen" class="links-thumbnail" />
+            </a>
+            <a href="img/tc950_activitylist.png" title="Post Overhaul Activity List Screen">
+                <img src="img/tc950_activitylist.png" alt="Post Overhaul Activity List Screen" class="links-thumbnail" />
+            </a>
+            <a href="img/tc922_editactivityl.png" title="Pre Overhaul Activity Edit Screen">
+                <img src="img/tc922_editactivityl.png" alt="Pre Overhaul Activity Edit Screen" class="links-thumbnail" />
+            </a>
+            <a href="img/tc950_createnew.png" title="Post Overhaul Activity Create Screen">
+                <img src="img/tc950_createnew.png" alt="Post Overhaul Activity Create Screen" class="links-thumbnail" />
+            </a>
+            <a href="img/tc950_conference.png" title="Post Overhaul Conference Activity Edit Screen">
+                <img src="img/tc950_conference.png" alt="Post Overhaul Conference Activity Edit Screen" class="links-thumbnail" />
+            </a>
+          </div>
+        </section>
+        <section data-state="bg-coral" id="js-slide-recent_006">
+          <h3 style="text-shadow:-4px 4px 2px #000">Recent UX &amp; UI Work</h3>
+          <h4>Customer UX/UI Project</h4>
+          <p><strong>Project Background</strong></p>
+          <p>The customer <span class="label label-default" style="font-size:0.7em;font-weight:200;color:#666;">(large global brand)</span> wanted to build on the back of the success of a Capability Assessment Tool delivered by myself and my team previously for a number of Business Functions.</p>
+          <p>They first approached WBT in March 2012 with a view to convert a suite of excel-based business processes and tools to integrated online components hosted within the the TopClass LMS. These tools are all in the area of organisational and individual competency management and assessment.</p>
+        </section>
+        <section data-state="bg-coral" id="js-slide-recent_007">
+          <section id="js-slide-recent_007a">
+            <h4>Customer UX/UI Project</h4>
+            <p><strong>Customer UX Case</strong></p>
+            <ul>
+              <li>An online user/administrative experience.</li>
+              <li>Centralised location of data.</li>
+              <li>Consistent UI/UX for all users.</li>
+              <li>Ability to generate user, manager, country and market level reports of data.</li>
+              <li>Allow for integration with the customer LMS, particularly in the area of creating individual learning plans for the assessment process.</li>
+              <li>Allow for localisation into 10+ new languages (incl. Asian) of the administrative and end-user screens (incl. PDF report generation).</li>
+              <li>Create custom End-user/Manager workflows for the assessment process.
+                <span style="font-size:.9em">
+                  <p class="textblock" style="text-align:right">
+                    <a href="javascript:void(0)" onClick="Reveal.down();" rel="next"><i class="tc-font-icon-down-3"></i><em>to take a look at what happened ... move <span style="text-decoration:underline;">down</span></em></a>
+                  </p>
+              </span>
+              </li>
             </ul>
+          </section>
+          <section id="js-slide-recent_007b">
+            <span style="font-size:.9em">
+              <p class="textblock" style="text-align:right">
+                <a href="javascript:void(0)" onClick="Reveal.up();" rel="next"><i class="tc-font-icon-up-3"></i><em>back to <span style="text-decoration:underline;">customer UX case</span></em></a>
+              </p>
+            </span>
+            <h4>From the original MS Excel-based assessment process ... </h4>
+            <br/>
+            <iframe src="http://player.vimeo.com/video/79868321?byline=0&amp;portrait=0" width="500" height="257" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <br/><br/>
+            <p>
+              <a href="http://vimeo.com/79868321" target="_blank">
+                <i class="tc-font-icon-video"></i> excel based process<span style="font-size: 0.75em"> - click here if media does not display correctly</span>
+              </a>.
+            </p>
+            <span class="more fragment" style="font-size:.9em">
+              <p class="textblock" style="text-align:right">
+                <a href="javascript:void(0)" onClick="Reveal.down();" rel="next"><i class="tc-font-icon-down-3"></i><em>to take a look at the results <span style="text-decoration:underline;">move down</span></em>
+                </a>
+              </p>
+            </span>
+          </section>
+          <section id="js-slide-recent_007c">
+          <span style="font-size:.9em">
+            <p class="textblock" style="text-align:right">
+              <a href="javascript:void(0)" onClick="Reveal.up();" rel="next"><i class="tc-font-icon-up-3"></i><em>back to <span style="text-decoration:underline;">excel based process</span></em>
+              </a>
+            </p>
+          </span>
+          <h4>... to the migrated assessment process UX</h4>
+          <br/>
+          <iframe src="http://player.vimeo.com/video/79874838?byline=0&amp;portrait=0" width="500" height="257" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <br/><br/>
+          <p>
+            <a href="http://vimeo.com/79874838" target="_blank">
+              <i class="tc-font-icon-video"></i> excel based process<span style="font-size: 0.75em"> - click here if media does not display correctly</span>
+            </a>.
+          </p>
+        </section>
+      </section>
+      <section data-state="bg-coral" id="js-slide-recent_008">
+        <h4>Customer Acknowledged Results &amp; Benefits</h4>
+        <p class="triangle-right left">
+          <i class="tc-font-icon-quote-left"></i>Creating custom role-based workflows to manage the various Assessment processes.<i class="tc-font-icon-quote-right"></i>
+        </p>
+        <p class="triangle-right right red">
+          <i class="tc-font-icon-quote-left"></i>Improving on UI/UX for user processes, i.e. the assessment process for end-users and managers.<i class="tc-font-icon-quote-right"></i>
+        </p>
+        <p class="triangle-right left gold">
+          <i class="tc-font-icon-quote-left"></i>Providing a localised UI to handle all current and future languages identified.<i class="tc-font-icon-quote-right"></i>
+        </p>
+        <!--
+        <p class="triangle-right right default">
+          <i class="tc-font-icon-quote-left"></i>Minimising changes required to core product functionality.<i class="tc-font-icon-quote-right"></i>
+        </p>
+        -->
+        <p class="triangle-right left">
+          <i class="tc-font-icon-quote-left"></i>Utilising YUI JavaScript Library Charting functionality to dynamically generate relevant real-time charts for End-Users, Assessors and relevant Management.<i class="tc-font-icon-quote-right"></i>
+        </p>
+        <p class="triangle-right right gold">
+          <i class="tc-font-icon-quote-left"></i>Using jQuery JavaScript Plugins and libraries to re-engineer UI/UX screens for end-users, while ensuring that performance for remote/low bandwidth users remained acceptable.<i class="tc-font-icon-quote-right"></i>
+        </p>
+        <p class="triangle-right right default">
+          <i class="tc-font-icon-quote-left"></i>Integrating with core TopClass product features, e.g. LMS Catalogue/Enrolments etc. particularly regarding the creation of Competency-based Development Plans.<i class="tc-font-icon-quote-right"></i>
+        </p>
+      </section>
+      <section id="js-slide_design">
+        <h4>Below are a couple of examples of UI/UX concepts from initial design to final output </h4>
+        <iframe src="http://www.slideshare.net/slideshow/embed_code/28459126?rel=0" width="597px" height="486px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe><br/><br/><div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/JamesSheil/my-uiux-design" title="My UI-UX Design" target="_blank"><i class="tc-font-icon-video"></i> UX design samples<span style="font-size: 0.75em"> - click here if media does not display correctly</span></a></strong> </div>
+      </section>
+      <section id="js-slide_instructdesign">
+        <h2>Instructional Design</h2>
+        <p style="text-align: left;">My work as an <em>Instructional Designer</em> also helped greatly to hone my UI/UX skills over the years.</p><br/>
+        <p style="text-align: left;background: rgba(255,255,255,.05);">I worked with customers to both advise on, and develop online learning materials. The <em>ADDIE</em> Instructional Design Process provided the framework for these projects.</p><br/>
+        <div style="text-align: left">Some of the skils required included:</div>
+        <ul>
+          <li>Performing needs analysis</li>
+          <li>Employing <strong>Data-Driven</strong> Designs</li>
+          <li>Collaborating with customer subject matter experts</li>
+          <li>Creating <strong><a href="#" id="id-popover" data-placement="top" onclick="return(false)"><i class="tc-font-icon-left"></i>engaging<i class="tc-font-icon-right"></i></a></strong> content
+            <div id="id-contents" class="popover fade top">
+              <div class="arrow"></div>
+              <div class="popover-content" style="background:#1A1A1A;">For a sample course created in Articulate as HTML5 - click <a href="content/topclass_articulate/story_html5.html" target="_blank">here</a></div>
+            </div>
           </li>
-          <br />
-          <li>
-            <strong>Mouse</strong> for navigation :            <ul><br />
-              <li><em>Mouse Wheel</em> : Previous &amp; Next page</li>
-              <li><em>Left Click</em> on the controls in the bottom right corner</li>
-              <li><em>Left Click</em> on the progress bar at the bottom</li>
-            </ul>
-          </li>
-          <br />
-          <li><em>Touch</em> navigation on devices with <strong>touch input</strong></li>
-    <br/>
-    <li>Hold down <em>Alt</em> and <strong>click</strong> on any element to zoom in on it</li>
+          <li>Ensuring the content was relevant to the target customer base</li>
+          <li>HTML, HTML5 &amp; SCORM content</li>
+          <li>Tools incl. <em>hand-coded HTML and javascript, Articulate Product Set and Adobe Captivate.</em></li>
         </ul>
-      </div>
-
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      </section>
+      <section data-state="customers" id="js-slide-customers">
+        <section data-state="customers1" id="js-slide-customers_001">
+          <h4>Some of the customers I have done UI/UX Work for include:</h4>
+          <br/><br/>
+          <ul class="media-list js-list" style="padding-left:20px;width:100%">
+            <li class="media">
+              <a class="pull-left" href="http://www.diageo.com" target="_blank">
+                <img src="img/diageo1.jpg" alt="Diageo" />
+              </a>
+              <div class="media-body">
+                <br/>
+                <a class="media-heading" href="http://www.diageo.com" target="_blank">Diageo</a>
+                <br/>
+              </div>
+            </li>
+            <li class="media">
+              <a class="pull-left" href="http://www.worldbank.org" target="_blank">
+                <img src="img/worldbank.png" alt="The World Bank" />
+              </a>
+              <div class="media-body">
+                <br/>
+                <a class="media-heading" href="http://www.worldbank.org" target="_blank">The World Bank</a>
+                <br/>
+              </div>
+            </li>
+            <li class="media">
+              <a class="pull-left" href="http://www.valero.com" target="_blank">
+                <img src="img/valero.png" alt="Valero" />
+              </a>
+              <div class="media-body">
+                <br/>
+                <a class="media-heading" href="http://www.valero.com" target="_blank">Valero</a>
+                <br/>
+              </div>
+            </li>
+          </ul>
+          <br/><br/>
+          <div style="font-size:.8em">
+            <p>
+            <a href="javascript:void(0)" onClick="Reveal.down();" rel="next">
+              <em><i class="tc-font-icon-down-3"></i><span>To view more</span> go <span style="text-decoration:underline;">down</span></em>
+            </a>
+            </p>
+          </div>
+        </section>
+        <section data-state="customers2" id="js-slide-customers_002">
+          <h3>  and </h3>
+          <br/><br/>
+          <div>
+            <ul class="media-list js-list" style="padding-left:20px;width:100%">
+              <li class="media">
+                <a class="pull-left" href="http://www.charteredaccountants.com.au/" target="_blank">
+                  <img src="img/icaa.png" alt="Institute of Chartered Accountants of Australia" />
+                </a>
+                <div class="media-body">
+                  <br/>
+                  <a class="media-heading" href="http://www.charteredaccountants.com.au/" target="_blank">Institute of Chartered Accountants of Australia</a>
+                  <br/>
+                </div>
+              </li>
+              <li class="media">
+                <a class="pull-left" href="http://www.miele.com" target="_blank">
+                  <img src="img/miele.png" alt="Miele" />
+                </a>
+                <div class="media-body">
+                  <br/>
+                  <a class="media-heading" href="http://www.miele.com" target="_blank">Miele</a>
+                  <br/>
+                </div>
+              </li>
+              <li class="media">
+                <a class="pull-left" href="http://www.betathetapi.org" target="_blank">
+                  <img src="img/betathetapi_logo.png" alt="Beta Theta Pi" />
+                </a>
+                <div class="media-body">
+                  <br/>
+                  <a class="media-heading" href="http://www.betathetapi.org‎" target="_blank">Beta Theta Pi</a>
+                  <br/>
+                </div>
+              </li>
+            </ul>
+            <br/><br/>
+            <div style="font-size:.8em">
+              <p>
+                <a href="javascript:void(0)" onClick="Reveal.up();" rel="prev">
+                  <em><i class="tc-font-icon-up-3"></i><span>Back </span><span style="text-decoration:underline;">up</span></em>
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="js-slide-end">
+        <h1>If you'd like to get in touch ...</h1>
+        <br/><br/>
+        <blockquote>
+          <i class="tc-font-icon-mail" style="margin-right: 20px;"></i><a href="mailto:jamesgcsheil@yahoo.co.uk">jamesgcsheil@yahoo.co.uk</a>
+        </blockquote>
+        <blockquote><i class="tc-font-icon-linkedin-squared" style="margin-right: 20px;"></i><a href="http://www.linkedin.com/profile/view?trk=tab_pro&id=84233139" target="_blank">LinkedIn profile</a>
+        </blockquote>
+      </section>
+    </div>
+  </div>
+  <!-- Hint/Help -->
+  <div id="hint">
+    <br />
+    <ul style="line-height:1.5em">
+      <li>
+        <strong>Keyboard shortcuts</strong> for navigation :
+        <ul><br />
+          <li><em>Keyboard arrows</em></li>
+          <li><kbd class="light">P</kbd> / <kbd class="light">PageUp</kbd> : Previous page</li>
+          <li><kbd class="light">N</kbd> / <kbd class="light">PageDown</kbd> / <kbd class="light">Space bar</kbd> : Next page</li>
+          <li><kbd class="light">Esc</kbd> / <kbd class="light">O</kbd> : Overview all the slides</li>
+          <li><kbd class="light">F</kbd> : Fullscreen</li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        <strong>Mouse</strong> for navigation :            
+        <ul><br />
+          <li><em>Mouse Wheel</em> : Previous &amp; Next page</li>
+          <li><em>Left Click</em> on the controls in the bottom right corner</li>
+          <li><em>Left Click</em> on the progress bar at the bottom</li>
+        </ul>
+      </li>
+      <br />
+      <li><em>Touch</em> navigation on devices with <strong>touch input</strong></li>
+      <br/>
+      <li>Hold down <em>Alt</em> and <strong>click</strong> on any element to zoom in on it</li>
+    </ul>
+  </div>
+  <!-- Lightbox Gallery -->
+  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <div class="slides"></div>
     <h3 class="title"></h3>
     <a class="prev">‹</a>
@@ -520,18 +492,17 @@
     <a class="close">×</a>
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
-</div>
+  </div>
 
+  <script src="js/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/bootstrap-lightbox/bootstrap-lightbox.min.js"></script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+  <script src="js/jQuery-Timelinr-master/js/jquery.timelinr-0.9.52.js"></script>
+  <script src="plugin/Gallery-2.12.1/js/blueimp-gallery.min.js"></script>
 
-                <script src="js/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/bootstrap-lightbox/bootstrap-lightbox.min.js"></script>
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
-    <script src="js/jQuery-Timelinr-master/js/jquery.timelinr-0.9.52.js"></script>
-    <script src="plugin/Gallery-2.12.1/js/blueimp-gallery.min.js"></script>
-
-    <script type="text/javascript">
+  <script type="text/javascript">
 
     $(document).ready(
       function() {
@@ -581,13 +552,15 @@
           case 9:
           case 10:
           case 11:
+          case 12:
+          case 13:          
             $("#nav-recent").addClass("active");
             break;
-          case 12:
-          case 13:
+          case 14:
+          case 15:          
             $("#nav-design").addClass("active");
             break;
-          case 14:
+          case 16:
             $("#nav-customers").addClass("active");
             break;
           default:
@@ -603,10 +576,8 @@
           },
           placement: 'left'
         };
+
         $("#id-popover").popover(idPopoverConfig);
-        $('.carousel').carousel({
-                            interval: 3500
-                           });
 
         $("ul.nav li").on("click", function() {
             $(".nav-collapse").collapse('hide');
@@ -614,6 +585,7 @@
             $(this).addClass('active');
           }
         );
+
         $(function(){
           $().timelinr({
           autoPlay: 'true',
@@ -641,8 +613,16 @@
                 carousel: true
             }
         );
+
+        $("#nav-help").hover(
+          function() {
+            $("#hint").css( {display:'block'} );    
+          },
+          function() {
+            $("#hint").css( {display:'none'} );  
+          }  
+        ).click( function() { return false; } );
     });
     </script>
-
   </body>
 </html>
