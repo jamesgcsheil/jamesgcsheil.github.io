@@ -404,3 +404,17 @@ ul#issues li img {
 div.container {
   margin-right: 30px;
 }
+
+#nav-menu,
+.navigate-up {
+  display: none;
+}
+
+
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-right,
+.reveal .controls div.enabled.navigate-left,
+.reveal .controls div.enabled.navigate-right {
+  color: #A77E3F;
+  opacity: 1.0;
+}

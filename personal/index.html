@@ -48,9 +48,9 @@
           <span class="icon-bar"></span>
           </button>
           <a class="brand" href="#" id="nav-help" ><i class="tc-font-icon-help-circled"></i>Help</a>
-          <div class="nav-collapse collapse">
+          <div class="nav-collapse collapse" id="nav-menu">
             <ul class="nav">
-            <li class="active" id="nav-home">
+            <li class="" id="nav-home">
               <a href="#/1"><i class="tc-font-icon-home"></i> Home</a>
             </li>
             <li id="nav-work">
@@ -161,7 +161,7 @@
         <section data-state="bg-coral" id="js-slide-recent_001">
           <h3 style="text-shadow:-4px 4px 2px #000">Recent UX & UI Work</h3>
           <h4>R&amp;D Product UX/UI Lead for LMS Server Product Overhaul</h4>
-          <p class="fragment">A core strength of the WBT Systems principle product - the <a href="http://www.wbtsystems.com/product/" target="_blank">TopClass LMS</a> - is its capacity to be radically modified and moulded to fit a customer's vision, both functionally and aesthetically via customisation by Services.<br/>This flexibility led to a focus in R&amp;D on new functionality to the detriment of the <em>overall User Experience</em>.</p>
+          <p class="fragment">A core strength of the WBT Systems principle product - the <a href="http://www.wbtsystems.com/product/" target="_blank">TopClass LMS</a> - is its capacity to be radically modified and moulded to fit a customer's vision, both functionally and aesthetically via customisation by Services.</p>
           <p class="fragment">Having championed the call to <em>redesign the LMS UX and UI</em> for a number of years ... I was chomping at the bit to get my hands on the product and help provide some TLC to the UI &amp; particularly the UX, moving to a more <strong>user-centric design</strong>.<br/>My many years on the coal face, helping customers with their own UI/UX project overhauls of the LMS, help to ensure that my concepts are <em>data-driven and based on real user feedback and concerns</em>.</p>
           <div  class="fragment">
             <p>This project is up-and-running for a number of months now ... and is keeping myself and my UI/UX team on our toes.</p>
@@ -532,9 +532,12 @@
         Reveal.addEventListener( 'slidechanged', function( event ) {
           console.log('slide changed' + event.indexh);
           $("ul.nav li").removeClass("active");
+          $(".navigate-right").css( "display", "block" );
+          $(".navigate-left").css( "display", "block" );
           switch(event.indexh)
           {
           case 0:
+            $(".navigate-left").css( "display", "none" );
           case 1:
             $("#nav-home").addClass("active");
             break;
@@ -563,10 +566,19 @@
           case 16:
             $("#nav-customers").addClass("active");
             break;
+          case 17:
+            $("#nav-menu").css( "display", "block" );  
+            $(".navigate-right").css( "display", "none" );
           default:
             break;
           }
             // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+        } );
+
+        Reveal.addEventListener( 'ready', function( event ) {
+            if ( Reveal.isFirstSlide() ) {
+              $(".navigate-left").css( "display", "none" );  
+            }
         } );
 
         var idPopoverConfig = {
